@@ -1,0 +1,245 @@
+h1{
+  font-family: 'Barlow', sans-serif;
+  position: absolute;
+  font-size: 3em;
+  color:var(--title-txt-color);
+}
+
+h2{
+  font-size: 2em;
+  color:var(--title-txt-color);
+}
+
+/* ENTRY DISPLAY */
+
+div#entry_display div#chart_div{
+  border-top:1px solid var(--main-txt-color);
+  border-bottom:1px solid var(--main-txt-color);
+  position:relative;
+  opacity: 0.3;
+}
+
+div#entry_display > div.text_div{
+  position:absolute;
+  top: 50vh; left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid var(--title-txt-color);
+  padding:10px;
+  text-align: center;
+  background-color:var(--main-bg-rgba);
+}
+
+div#entry_display > div.text_div > *{
+  position:relative;
+  margin:0;
+}
+
+div#entry_display > div.text_div > h2{
+  color:var(--main-txt-color);
+}
+
+/* MAIN */
+div#presentation{
+  margin-top:60px;
+  width:80%;
+  margin-left:10%;
+  padding-top:20px;
+  padding-bottom:20px;
+  background-color:var(--main-bg-color);
+  color:var(--main-txt-color);
+  text-align: center;
+}
+
+/* GENERALLY */
+
+div#presentation div#generally{
+  min-width: 100%;
+  max-width: 500px;
+  margin:auto;
+  text-align: center;
+}
+
+div#presentation div#generally > p{
+  font-size: 1.5em;
+  margin:0;
+  width:100%;
+}
+
+/*create_strategy*/
+div#presentation #create_strategy{
+  background-color:var(--second-bg-color);
+  padding:20px;
+  text-align: center;
+  width:100%;
+  max-width: 800px;
+  margin: auto;
+  margin-top:75px;
+  box-sizing: border-box;
+}
+
+div#presentation #create_strategy > h2{
+  margin-top:0;
+}
+
+div#presentation #create_strategy > img{
+  width:100%;
+  height:auto;
+}
+/*
+div#presentation #create_strategy{
+  margin-top:50px;
+  background-color:var(--main-txt-color);
+  color:var(--main-txt-color);
+  font-size: 1.2em;
+  padding:1.2em;
+  padding-left:2.4em;
+}
+
+div#presentation #create_strategy li{
+  border:1px solid var(--main-bg-color);
+  padding:10px;
+  margin:5px;
+  box-sizing: content-box;
+}
+
+div#presentation #create_strategy li > *{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+div#presentation #create_strategy li > img{
+  margin-right:5px;
+}
+div#presentation #create_strategy li > p{
+  margin:0;
+}
+*/
+
+/* flip_card */
+div#presentation #flip_card{
+  margin-top:75px;
+}
+
+div#presentation #flip_card > div{
+  width:250px;
+  height:250px;
+  background-color:var(--second-bg-color);
+  display: inline-table;
+  border:1px solid var(--main-bg-color);
+  color:var(--main-txt-color);
+  margin-bottom:1px;
+  margin-top:1px;
+  padding:20px;
+  font-size: 20px;
+}
+
+div#presentation #flip_card > div > img{
+  width:40%;
+}
+
+div#presentation #flip_card > div > hr{
+  border:1px solid var(--main-bg-color);
+}
+
+/*strategy*/
+
+div#presentation div#strategy{
+  margin-top:75px;
+  display:flex;
+  flex-flow: row wrap;
+  justify-content:space-around;
+}
+
+div#presentation div#strategy > img{
+  width:100%;
+  max-width: 800px;
+  height:auto;
+}
+div#presentation div#strategy > div.txt{
+  margin-top:75px;
+  width:600px;
+  align-self:center;
+  background-color:var(--second-bg-color);
+  color:var(--main-txt-color);
+  padding:50px;
+  text-align: left;
+  box-shadow: 0px 0px 28px -1px var(--main-txt-color);
+}
+
+div#presentation div#strategy > div.txt h2{
+  font-size: 1.5em;
+}
+
+div#presentation div#strategy > div.txt li{
+  color:var(--main-txt-color);
+}
+
+div#presentation div#strategy > div.txt li p.marge{
+  margin-top:5px;
+}
+
+div#presentation div#strategy > div.txt li p.marge > img{
+  vertical-align: middle;
+}
+
+/* START */
+div#start{
+  margin-top:75px;
+  width:100%;
+  height:100%;
+  display:flex;
+  justify-content:center;
+  cursor: pointer;
+}
+
+div#start a{
+  text-decoration: none;
+}
+
+div#start h2{
+  align-self:center;
+  border: 2px solid var(--title-txt-color);
+  padding:20px;
+  text-align: center;
+  vertical-align: middle;
+  transition: 0.3s;
+}
+
+div#start h2 > img{
+  height:50px;
+  vertical-align: middle;
+}
+
+div#start h2:hover{
+  -webkit-box-shadow: 0px 0px 11px 0px var(--title-txt-color);
+  -moz-box-shadow: 0px 0px 11px 0px var(--title-txt-color);
+  box-shadow: 0px 0px 11px 0px var(--title-txt-color);
+}
+
+/*FOOTER */
+
+footer.end{
+  margin-top:75px;
+  background-color:var(--second-bg-color);
+  padding:10px;
+  color:var(--main-txt-color);
+  font-size: 1em;
+}
+footer.end p{
+  margin:5px;
+}
+
+footer.end img{
+  vertical-align: middle;
+  margin-left:5px;
+}
+
+footer.end div.flex{
+  display:flex;
+  justify-content: space-between;
+}
+
+footer.end hr{
+  border:1px solid var(--main-bg-color);
+  color:var(--main-txt-color);
+}

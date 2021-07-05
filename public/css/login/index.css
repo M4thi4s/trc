@@ -1,0 +1,31 @@
+div#form{
+  background-color: var(--second-bg-color);
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+
+  position:fixed;
+
+  left:50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+
+  grid-gap:20px;
+  padding:20px;
+
+  border:1px solid var(--main-txt-color);
+}
+
+div#form input{
+  border:1px solid var(--main-txt-color);
+  padding:10px;
+}
+
+div#form input[type=text], div#form input[type=email], div#form input[type=password]{
+  grid-column: 1 / 3;
+}
+
+div#form input[type=button]{
+  background-color: var(--main-txt-color);
+  color:white;
+}

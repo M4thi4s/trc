@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>TRC - AUtd</title>
+    <link rel="stylesheet" href="/css/global/global_style.css"/>
+    <link rel="stylesheet" href="/css/account/account.css"/>
+    <link rel="stylesheet" href="/css/global/menu.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,600;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="/js/lib/jquery.min.js"></script>
+
+    <script src="/js/global/serverInteraction.js"></script>
+    <script src="/js/global/checkAuthentification.js"></script>
+    <script src="/js/global/generate_menu.js"></script>
+
+    <script src="/js/account/index.js"></script>
+
+  </head>
+  <body>
+
+    <ul id="top_menu">
+      <li id="menu-1-item">
+        <a class="left_item_menu"  href="/" title="aller à la section 1">TRC | Trading Robot Creator <u style="color:red;">BETA</u></a>
+      </li>
+
+      <img src="/img/TRC.svg" class="menu_item_img_middle"/>
+
+    </ul>
+
+    <div id="display_div">
+      <div id="strategy_arr">
+        <h2> Strategy List : </h2>
+
+        <table id="table_strategy">
+          <tr>
+            <th>ID</th>
+            <th>Date</th>
+            <th>Indicators</th>
+            <th>Pattern</th>
+            <th>Min of tick</th>
+            <th>Tick to confirm</th>
+            <th>view raw JSON</th>
+            <th>Choose quotation file</th>
+          </tr>
+        </table>
+
+      </div>
+
+      <hr></hr>
+
+      <div id="strategy_result">
+        <div id="left_side">
+          <h2> Strategy Result List : </h2>
+
+          <table id="table_strategy_result">
+            <tr>
+              <th>ID</th>
+              <th>strategy ID</th>
+              <th>quotation file ID</th>
+              <th>size (kB)</th>
+              <th>Date</th>
+              <th>down CSV</td>
+            </tr>
+
+        <!--    <tr>
+              <td colspan="8">EXECUTE STRATEGY &nbsp;<img class="filter_img_white" src="/img/addDir.svg"/></td>
+            </tr>-->
+          </table>
+        </div>
+        <div id="right_side">
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>

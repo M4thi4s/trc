@@ -1,0 +1,41 @@
+V1
+
+recupere fichier strategy et quotation
+
+lis fichiers de configuration des indicateurs et patterns
+
+parcour liste des instrument
+
+de n = min data => derniere valeur
+
+  recupere timestamp
+  selectionne quotation jusqu'a n
+
+  calul pattern pour n
+  calcul indicateurs
+
+  verifit strategy
+    analyse resultat
+
+
+
+v2
+
+recupere fichier strategy et quotation
+
+lis fichiers de configuration des indicateurs et patterns
+
+parcour liste des instrument
+
+calcul indicateurs
+
+de n = min_data => derniere valeur
+
+  recupere timestamp
+  selectionne quotation jusqu'a n
+
+  calul pattern pour n
+  recupere valeur indicateur de min_data à n
+
+  verifit strategy
+    analyse resultat

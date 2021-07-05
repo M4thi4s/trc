@@ -1,0 +1,94 @@
+html{
+  padding:0;
+  margin:0;
+/*  --main-bg-color: #f5a25d;
+  --second-bg-color: #ebebeb;
+  --main-txt-color: #389393;
+  --main-txt-style: 'Barlow', sans-serif;
+  --title-txt-color: #ec524b;*/
+
+/*
+  --main-bg-color: #f8f1f1;
+  --second-bg-color: #16C79A;
+  --main-txt-color: #19456b;
+  --main-txt-style: 'Barlow', sans-serif;
+  --title-txt-color: #19456b;
+*/
+/*
+  --main-bg-color: #fffcf5;
+  --second-bg-color: #FFD166;
+  --main-txt-color: #073B4C;
+  --main-txt-style: 'Barlow', sans-serif;
+  --title-txt-color: #EF476F;
+*/
+/*
+--main-bg-color: #EDF6F9;
+--second-bg-color: #FFDDD2;
+--main-txt-color: #006D77;
+--main-txt-style: 'Barlow', sans-serif;
+--title-txt-color: #83C5BE;
+*/
+/*
+--main-bg-color: #F7FFF7;
+--second-bg-color: #4ECDC4;
+--main-txt-color: #1A535C;
+--main-txt-style: 'Barlow', sans-serif;
+--title-txt-color: #FB6B6B;
+*/
+/*
+--main-bg-color: #003049;
+--second-bg-color: #F77F00;
+--main-txt-color: #f2b97e;
+--main-txt-style: 'Barlow', sans-serif;
+--title-txt-color: #F77F00;
+*/
+--main-bg-color: #ffffff;
+--second-bg-color:  #ebedef;
+--main-txt-color: #433520;
+--main-txt-style: 'Barlow', sans-serif;
+--title-txt-color: #00917c;
+--main-bg-rgba: rgba(235, 237, 238, 0.7);
+/*
+--main-bg-color: #f2f2f2;
+--second-bg-color: #ffffff;
+--main-txt-color: #222831;
+--main-txt-style: 'Barlow', sans-serif;
+--title-txt-color: #ee3030;
+--main-bg-rgba: rgba(223, 224, 223, 0.7);
+
+#dddddd ; #222831 ; #30475e ; #f05454
+*/
+
+}
+
+body{
+  position:relative;
+  margin:0;
+  left:0;
+  padding:0;
+  width:100%;
+  top:0;
+  bottom:0;
+  background-color: var(--main-bg-color);
+  font-family: var(--main-txt-style);
+}
+
+.menu_item_img, .menu_item_img_middle, .filter_img{
+  filter: invert(12%) sepia(7%) saturate(7311%) hue-rotate(2deg) brightness(92%) contrast(75%);
+}
+
+.img_to_title_color{
+  filter: invert(38%) sepia(53%) saturate(4660%) hue-rotate(151deg) brightness(90%) contrast(101%);
+}
+
+.filter_img_red{
+  filter: invert(65%) sepia(84%) saturate(4559%) hue-rotate(328deg) brightness(92%) contrast(102%);
+}
+
+.filter_img_white{
+  filter: invert(100%) sepia(92%) saturate(0%) hue-rotate(226deg) brightness(106%) contrast(108%);
+}
+
+.center{
+  text-align: center;
+}

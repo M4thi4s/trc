@@ -1,0 +1,100 @@
+#display_div{
+  margin-top:50px;
+  margin-left:5%;
+  margin-right:5%;
+  background-color: var(--second-bg-color);
+  padding:15px;
+}
+
+#strategy_arr{
+  border:1px solid var(--main-txt-color);
+  padding:15px;
+}
+
+h2{
+  margin:0;
+  padding:0;
+  margin-bottom:10px;
+  color:var(--main-txt-color);
+}
+
+/* TABLE STYLE */
+table{
+  border:1px solid var(--main-txt-color);
+  width:100%;
+  border-collapse: collapse;
+}
+table th, table td{
+  padding:5px;
+}
+table, th, td{
+  border:1px solid var(--main-txt-color);
+}
+
+table td{
+  color:var(--main-txt-color);
+  word-break: break-all;
+}
+
+table td[colspan="8"], table td[colspan="6"]{
+  text-align: center;
+}
+
+table td[colspan="8"], th, table td[colspan="6"]{
+  background-color:var(--main-txt-color);
+  color:white;
+}
+
+table td.action{
+  /*background-color:var(--title-txt-color);*/
+  color:var(--title-txt-color);;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+table td > * {
+  vertical-align : middle;
+}
+
+table td.quot_file>*{
+  margin-right : 10px;
+  margin-left : 10px;
+}
+/* END TABLE STYLE */
+
+hr{
+  color: var(--main-txt-color);
+}
+
+div#left_side, div#right_side{
+  width:50%;
+  box-sizing:border-box;
+  margin:0;
+  padding:15px;
+}
+
+div#strategy_result::after {
+   content: "";
+   display: block;
+   clear: both;
+}
+/* LEFT SIDE */
+div#left_side{
+  float:left;
+  border-right:1px solid var(--main-txt-color);
+}
+
+/*LEFT SIDE END*/
+
+/*RIGHT SIDE*/
+div#right_side{
+  float:right;
+}
+
+/*END RIGHT SIDE*/
+select{
+  padding:5px;
+  margin:5px;
+  border:1px solid var(--main-txt-color);;
+  background-color: none;
+}

@@ -1,0 +1,35 @@
+solution téléchargement données financières :
+	https://financequotes-api.com/
+
+solution calcul indicateurs :
+	https://github.com/ta4j/ta4j
+
+	peut d'indicateur : https://www.dukascopy.com/wiki/en/development/strategy-api/indicators/candlestick-pattern-indicators#use-multiple-patterns
+
+solution calcul pattern :
+	nb de pattern indeterminé : https://www.dukascopy.com/wiki/en/development/strategy-api/indicators/candlestick-pattern-indicators#use-multiple-patterns
+	
+	meilleur alternative actuellement : https://github.com/treslines/candlestick_checker
+
+<----------------------------------------------------------------------------->
+
+V4 logiciel
+
+0 - relire intégralité code et effectuer arborescence du fonctionnement
+1 - vérifier fonctionnement API et améliorer code si besoin
+2 - réflechir optimisation et correction bug de logique et de valeur
+3 - rajouter système de try et de catch un maximum pour éviter erreur -> + rajouter système de détection de temps trop long pour executer stratégie
+4 - améliorer affichage et gestion erreur js coté serveyr et client
+5 - réflechir sécurité
+6 - changer système d'éxecution des quotations avec uniquement un seul instrument à la fois
+7 - augmenter sécurité en implémentant un nombre maximum de tests de stratégie pour un certain nb d'instrument par heure + afficher ce nombre sur page du compte
+8 - 
+
+
+<-----------------------> IMPORTANT <----------------------->
+
+Amélioration : nb max de strategy et suppression obligatoire si trop de strat
+
+traduire tous le site en AN
+
+définir une variable global du dossier courant pour enregistrer les données + la définir dans generate_path et démarrer cette fonction à chaque démarrage de l'application (pour éviter de la recalculer à chaque fois dans pls fichiers)

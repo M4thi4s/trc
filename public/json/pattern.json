@@ -1,0 +1,94 @@
+{
+  "abandonedbaby" : {
+    "name":"Abandoned Baby",
+    "numberOfQuotMin":  3
+  },
+  "bearishengulfingpattern" : {
+    "name":"Bearish Engulfing Pattern",
+    "numberOfQuotMin":  2
+  },
+  "bullishengulfingpattern" : {
+    "name":"Bullish Engulfing Pattern",
+    "numberOfQuotMin":  2
+  },
+  "darkcloudcover" : {
+    "name":"Dark Cloud Cover",
+    "numberOfQuotMin":  2
+  },
+  "downsidetasukigap" : {
+    "name":"Downside Tasuki Gap",
+    "numberOfQuotMin":  3
+  },
+  "doji" : {
+    "name":"Doji",
+    "numberOfQuotMin":  1
+  },
+  "dragonflydoji" : {
+    "name":"DragonFly Doji",
+    "numberOfQuotMin":  1
+  },
+  "gravestonedoji" : {
+    "name":"GraveStone Doji",
+    "numberOfQuotMin":  1
+  },
+  "bullishharami" : {
+    "name":"Bullish Harami",
+    "numberOfQuotMin":  2
+  },
+  "bearishharamicross" : {
+    "name":"Bearish Harami Cross",
+    "numberOfQuotMin":  2
+  },
+  "bullishharamicross" : {
+    "name":"Bullish Harami Cross",
+    "numberOfQuotMin":  2
+  },
+  "bullishmarubozu" : {
+    "name":"Bullish Marubozu",
+    "numberOfQuotMin":  1
+  },
+  "bearishmarubozu" : {
+    "name":"Bearish Marubozu",
+    "numberOfQuotMin":  1
+  },
+  "eveningdojistar" : {
+    "name":"Evening Doji Star",
+    "numberOfQuotMin":  3
+  },
+  "eveningstar" : {
+    "name":"Evening Star",
+    "numberOfQuotMin":  3
+  },
+  "bearishharami" : {
+    "name":"Bearish Harami",
+    "numberOfQuotMin":  2
+  },
+  "piercingline" : {
+    "name":"Piercing Line",
+    "numberOfQuotMin":  2
+  },
+  "bullishspinningtop" : {
+    "name":"Bullish Spinning Top",
+    "numberOfQuotMin":  1
+  },
+  "bearishspinningtop" : {
+    "name":"Bearish Spinning Top",
+    "numberOfQuotMin":  1
+  },
+  "morningdojistar" : {
+    "name":"Morning Doji Star",
+    "numberOfQuotMin":  3
+  },
+  "morningstar" : {
+    "name":"Morning Star",
+    "numberOfQuotMin":  3
+  },
+  "threeblackcrows" : {
+    "name":"Three Black Crows",
+    "numberOfQuotMin":  3
+  },
+  "threewhitesoldiers" : {
+    "name":"Three White Soldiers",
+    "numberOfQuotMin":  3
+  }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title> TRC - Strategy Creator </title>
+    <script src="/js/strategy_creator/index.js"> </script>
+    <script src="/js/lib/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,600;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <script src="/js/global/serverInteraction.js"></script>
+    <script src="/js/global/checkAuthentification.js"></script>
+    <script src="/js/global/generate_menu.js"></script>
+
+    <script src="/js/global/code_line.js"></script>
+
+    <link rel="stylesheet" href="/css/global/global_style.css"/>
+    <link rel="stylesheet" href="/css/global/menu.css"/>
+    <link rel="stylesheet" href="/css/strategy_creator/index.css"/>
+  </head>
+  <body>
+
+    <!-- first step : choose indicators and pattern and config them -->
+
+    <ul id="top_menu">
+      <li id="menu-1-item">
+        <a class="left_item_menu"  href="/" title="aller à la section 1">TRC | Trading Robot Creator <u style="color:red;">BETA</u></a>
+      </li>
+
+      <img src="/img/TRC.svg" class="menu_item_img_middle"/>
+
+    </ul>
+
+    <div id="display_div">
+
+      <div id="p1-main-container">
+
+      </div>
+
+      <div id="p1-bottom-menu">
+        <p> add </p>
+        <button type="button" name="indicators" class="p1-bottom-menu-button p1-bottom-menu-choice">indicators</button>
+        <button type="button" name="pattern" class="p1-bottom-menu-button p1-bottom-menu-choice">pattern</button>
+        <p> for your strategy, if </p>
+        <button type="button" name="finish" class="p1-bottom-menu-button" id="p1-bottom-menu-finish">finish</button>
+        <p> clicked on the left button </p>
+      </div>
+    </div>
+
+  </body>
+</html>

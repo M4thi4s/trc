@@ -1,0 +1,396 @@
+body{
+  background-color: var(--second-bg-color);
+}
+
+#p1-bottom-menu{
+  position: fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  background-color: var(--main-bg-color);
+  text-align: center;
+  vertical-align: middle;
+  padding-top:5px;
+  padding-bottom:5px;
+  color:var(--main-txt-color);
+  height:30px;
+}
+#p1-bottom-menu *{
+  display:inline;
+  position:relative;
+}
+
+#p1-bottom-menu button, div.card button, #last_parameter button.p1-bottom-menu-button, .next_step_bt{
+  padding:4px;
+  background-color:transparent;
+  border:1px solid black;
+  border-radius: 3px;
+  margin-left:3px;
+  margin-right:3px;
+  transition: all 0.3s;
+  font-family: var(--main-txt-style);
+}
+#p1-main-container{
+  top:70px;
+  bottom:40px;
+  left:0;
+  right:0;
+  position:fixed;
+  background-color: var(--second-bg-color);
+  text-align: center;
+  overflow-y: scroll;
+}
+
+#p1-main-container table#indicators_pattern_list{
+  position: absolute;
+  background-color:var(--second-bg-color);
+  width:300px;
+  left:calc(50% - 150px);
+  top:5%;
+  border-collapse: collapse;
+  border:1px solid var(--main-txt-color);
+}
+
+#p1-main-container table#indicators_pattern_list *{
+  margin-top:3px;
+  border-top:1px solid var(--main-txt-color);
+}
+
+#p1-main-container table#indicators_pattern_list thead{
+  background-color: var(--main-bg-color);
+}
+#p1-main-container table#indicators_pattern_list tr{
+  transition: all 0.3s;
+}
+
+#p1-main-container div.card{
+  width:250px;
+  height:auto;
+  padding:10px;
+  position: relative;
+  background-color:var(--main-bg-color);
+  display: inline-block;
+  margin:30px;
+  color:var(--main-txt-color);
+  text-align: center;
+}
+
+div.card input{
+  margin-bottom:20px;
+}
+
+#p1-main-container div.indicators{
+  border:2px solid red;
+}
+
+#p1-main-container div.pattern{
+  border:2px solid blue;
+}
+
+#p1-main-container input{
+  border-radius: 0;
+  border:0;
+  box-shadow: 0;
+  padding:4px;
+  width:75%;
+  border:1px solid black;
+  border-radius: 3px;
+  text-align: center;
+}
+
+#last_parameter{
+  position: absolute;
+  margin-top: 200px;
+  border:2px solid var(--main-txt-color);
+  width:80%;
+  left:10%;
+  background-color: var(--second-bg-color);
+  text-align: center;
+  padding:10px;
+}
+#last_parameter_left{
+  position: relative;
+  display: inline-block;
+  width:calc(49% - 2px);
+  border-right:2px solid var(--main-txt-color);
+}
+#last_parameter_right{
+  position: relative;
+  display: inline-block;
+  width:49%;
+  vertical-align: top;
+}
+#last_parameter_right p#last_parameter_right_code{
+  white-space: pre-line;
+  text-align: left;
+  position: relative;
+  left:10px;
+  word-wrap: break-word;
+  font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+/* DISPLAY */
+#display_div{
+  width:100%;
+  position: relative;
+  display : flex;
+  flex-wrap: wrap;
+  margin:0;
+  padding:0;
+}
+
+#display_div > div.right-top,
+#display_div > div.left-top,
+#display_div > div.right-bottom,
+#display_div > div.left-bottom{
+  width: 50%;
+  box-sizing: border-box;
+}
+#display_div > div.send{
+  width: 100%;
+  box-sizing: border-box;
+
+  border-bottom-width:2px;
+  border-top-width:1px;
+
+  background-color: var(--main-bg-color);
+  color:var(--main-txt-color);
+
+  text-align: center;
+}
+
+#display_div div.left-top, #display_div div.right-top, #display_div div.left-bottom, #display_div div.right-bottom{
+  border-color: var(--main-txt-color);
+  border-style:solid;
+  border-width:0px;
+}
+
+#display_div div.left-top{
+  border-right-width:1px;
+  border-right-color:var(--main-bg-color);
+  border-bottom-width:1px;
+  border-bottom-color:var(--main-bg-color);
+  border-top-width:2px;
+
+}
+#display_div div.right-top{
+  border-left-width:1px;
+  border-left-color:var(--main-bg-color);
+  border-bottom-width:1px;
+  border-bottom-color:var(--main-bg-color);
+  border-top-width:2px;
+
+}
+#display_div div.left-bottom{
+  border-right-width:1px;
+  border-right-color:var(--main-bg-color);
+  border-top-width:1px;
+  border-top-color:var(--main-bg-color);
+  border-bottom-width:1px;
+  border-bottom-color:var(--main-bg-color);
+
+}
+
+#display_div div.right-bottom{
+  border-left-width:1px;
+  border-left-color:var(--main-bg-color);
+  border-top-width:1px;
+  border-top-color:var(--main-bg-color);
+  border-bottom-width:1px;
+  border-bottom-color:var(--main-bg-color);
+}
+
+#display_div * p.display-menu-title{
+  width:100%;
+  text-align: center;
+  background-color: #389393;
+  margin:0;
+  padding-top:10px;
+  padding-bottom:10px;
+  text-decoration: underline;
+}
+
+#display_div div[class^='tick']{
+  border-bottom: 1px solid var(--main-txt-color);
+  text-align: center;
+}
+
+#display_div div[class^='tick'] p.tick-title{
+  text-align: center;
+  border-bottom: 1px dashed var(--main-txt-color);
+  padding-bottom:5px;
+}
+
+#display_div div[class^='tick'] p.default-tick-title{
+  text-decoration: underline;
+  font-style: italic;
+  font-size: 80%;
+}
+#display_div * div.display-bottom-menu{
+  padding:5px;
+  text-align: center;
+}
+#display_div * div.display-bottom-menu *{
+  vertical-align: middle;
+  margin-right:5px;
+  margin-left:5px;
+}
+
+#display_div * div[class^='tick'] div.indi{
+  position: relative;
+  background-color: var(--main-bg-color);
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  display:inline-block;
+  margin:10px;
+  border:1px solid var(--main-txt-color);;
+}
+
+#display_div * div[class^='tick'] div.indi div.indi-title{
+  border:1px dashed var(--main-txt-color);
+  margin:10px;
+  padding:5px;
+  display:grid;
+  grid-template-columns:90% 10%;
+  background-color: var(--second-bg-color);
+}
+#display_div * div[class^='tick'] div.indi div.indi-title p{
+  margin:0;
+}
+
+#display_div * div[class^='tick'] div.strat-selector p{
+  margin:10px;
+  display: inline-block;
+}
+#display_div * div[class^='tick'] div.strat-selector button.indi-input-add,
+#display_div * div[class^='tick'] div.strat-selector button.indi-input-remove,
+#display_div * div[class^='tick'] div.strat-selector button.indi-input-valid{
+  width:auto;
+}
+
+#display_div * div[class^='tick'] div.indi input{
+  width:25%;
+}
+
+#display_div * div[class^='tick'] div.indi input,
+#display_div * div[class^='tick'] div.strat-selector button.indi-input-add,
+#display_div * div[class^='tick'] div.strat-selector button.indi-input-valid,
+#display_div * div[class^='tick'] div.strat-selector button.indi-input-remove,
+#display_div * div[class^='tick'] div.strat-selector select,
+#display_div * div[class^='tick'] div.validate-all button.validate-all-bt,
+#display_div * div.display-bottom-menu select.select-ind,
+#display_div * div.display-bottom-menu button,
+#display_div div.send button.but{
+  padding:5px;
+  margin:5px;
+  border:1px solid var(--main-txt-color);;
+  background-color: none;
+}
+
+#display_div * div[class^='tick'] div.strat-selector button.indi-input-valid{
+  background-color:rgb(115, 233, 96);
+}
+
+#display_div * div[class^='tick'] div.strat-selector button.indi-input-remove{
+  background-color:rgb(233, 96, 96);
+}
+
+#display_div * div[class^='tick'] div.validate-all button.validate-all-bt{
+  position:relative;
+  width:calc(100% - 10px);
+}
+
+#display_div * div[class^='tick'] img.indi-delete{
+  height:20px;
+  vertical-align: middle;
+  border-radius: 10px;
+}
+
+button, input, select, img.indi-delete{
+  transition-duration: 0.1s;
+}
+
+/*CODE */
+div#code{
+  margin-top:50px;
+  position:absolute;
+  width:75%;
+  left:12.5%;
+
+  background-color:var(--second-bg-color);
+  padding:20px;
+
+  -webkit-box-shadow: 0px 2px 28px -1px var(--main-bg-color);
+  -moz-box-shadow: 0px 2px 28px -1px var(--main-bg-color);
+  box-shadow: 0px 0px 28px -1px var(--main-bg-color);
+
+  color:black;
+
+}
+
+div#code pre{
+  border-top:2px solid var(--main-txt-color);
+  overflow:auto;
+  margin:0 0 1em;
+  padding:.5em 1em;
+
+}
+
+div#code h2{
+  font-family: var(--main-txt-style);
+  font-size:30px;
+  margin:0;
+  padding:0;
+  margin-bottom:10px;
+  margin-top:10px;
+  color:var(--title-txt-color);
+}
+
+code{
+  font-size:20px;
+}
+
+pre code, pre .line-number{
+  display: block;
+  line-height: 1.5rem;
+  font:normal normal 12px/14px "Courier New",Courier,Monospace;
+}
+
+pre .line-number {
+  float:left;
+  margin:0 1em 0 -1em;
+  border-right:1px solid;
+  text-align:right;
+  color:var(--title-txt-color);
+
+}
+
+pre .line-number span {
+  display:block;
+  padding:0 .5em 0 1em;
+}
+
+pre .cl {
+  display:block;
+  clear:both;
+}
+
+/* END DISPLAY */
+
+
+#p1-bottom-menu button:hover, .next_step_bt:hover ,div.card button:hover, #last_parameter button.p1-bottom-menu-button:hover{
+	border-radius: 6px;
+  background-color:var(--second-bg-color);
+}
+#p1-main-container table#indicators_pattern_list tr:hover{
+  background-color: var(--main-bg-color);
+}

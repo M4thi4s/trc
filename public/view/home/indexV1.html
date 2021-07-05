@@ -1,0 +1,268 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>TRC</title>
+    <link rel="stylesheet" href="/css/home/index.css"/>
+    <link rel="stylesheet" href="/css/global/menu.css"/>
+    <link rel="stylesheet" href="/css/global/global_style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,600;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <script src="/js/lib/jquery.min.js"></script>
+
+    <script src="/js/global/code_line.js"></script>
+    <script src="/js/lib/highcharts/highstock.js"></script>
+    <script src="/js/lib/highcharts/highcharts-more.js"></script>
+    <script src="/js/lib/highcharts/indicators/indicators-all.js"></script>
+
+    <script src="/js/global/serverInteraction.js"></script>
+    <script src="/js/global/checkAuthentification.js"></script>
+    <script src="/js/global/generate_menu.js"></script>
+
+    <script type="module" src="/js/home/index.js"></script>
+  </head>
+  <body>
+
+    <!--<img src="/img/TRC.svg" id="titleSVG"/>-->
+
+    <ul id="top_menu">
+      <li id="menu-1-item">
+        <a class="left_item_menu"  href="/" title="aller à la section 1">TRC | Trading Robot Creator BETA</a>
+      </li>
+
+      <img src="/img/TRC.svg" class="menu_item_img_middle"/>
+
+    </ul>
+
+    <div id="main_presentation">
+
+      <h1> TRC is a stock market profitability simulation software based on the use of stock market indicator </h1>
+
+      <div class="presentation_card">
+        <img class="presentation_card_img" src="/img/computer.svg"/>
+        <hr>
+        <div class="presentation_card_txt">
+          <p>powerfull displaying of SE data</p>
+        </div>
+      </div>
+
+      <div class="presentation_card">
+        <img class="presentation_card_img" src="/img/etudier.svg"/>
+        <hr>
+        <div class="presentation_card_txt">
+          <p>several indicators available to build your strategies</p>
+        </div>
+      </div>
+
+      <div class="presentation_card">
+        <img class="presentation_card_img" src="/img/gear.svg"/>
+        <hr>
+        <div class="presentation_card_txt">
+          <p >design your own automatical strategy with indicators</p>
+        </div>
+      </div>
+
+      <div class="presentation_card">
+        <img class="presentation_card_img" src="/img/code.svg"/>
+        <hr>
+        <div class="presentation_card_txt">
+          <p>implement your code or get an existing strategy</p>
+        </div>
+      </div>
+
+      <div class="presentation_card">
+        <img class="presentation_card_img" src="/img/money.svg"/>
+        <hr>
+        <div class="presentation_card_txt">
+          <p>watch performance and make money</p>
+        </div>
+      </div>
+
+      <div class="presentation_card">
+        <img class="presentation_card_img" src="/img/nasdaq.svg"/>
+        <hr>
+        <div class="presentation_card_txt">
+          <p>Compatible with almost all Nasdaq and Nyse financial instruments.</p>
+        </div>
+      </div>
+
+      <div class="presentation_card">
+        <img class="presentation_card_img" src="/img/test.svg"/>
+        <hr>
+        <div class="presentation_card_txt">
+          <p>Test and correct your strategies to make them even more powerful and profitable</p>
+        </div>
+      </div>
+
+      <div class="presentation_card">
+        <img class="presentation_card_img" src="/img/db.svg"/>
+        <hr>
+        <div class="presentation_card_txt">
+          <p>Data updated every minute</p>
+        </div>
+      </div>
+
+
+
+      <div class="presentation_card">
+        <img class="presentation_card_img" src="/img/indicators.svg"/>
+        <hr>
+        <div class="presentation_card_txt">
+          <p>compatible with more than 25 most used indicators</p>
+        </div>
+      </div>
+
+      <div class="presentation_card">
+        <img class="presentation_card_img" src="/img/pattern.svg"/>
+        <hr>
+        <div class="presentation_card_txt">
+          <p>Can detect more than 20 different patterns</p>
+        </div>
+      </div>
+
+      <div class="presentation_card">
+        <img class="presentation_card_img" src="/img/nodejs.svg"/>
+        <hr>
+        <div class="presentation_card_txt">
+          <p>Compatible with latest stable version of nodeJS</p>
+        </div>
+      </div>
+
+      <div class="presentation_card">
+        <img class="presentation_card_img" src="/img/contact.svg"/>
+        <hr>
+        <div class="presentation_card_txt">
+          <p>tradingrobotcreator@gmail.com</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="chart_div"></div>
+
+    <div id="presentation_tool">
+
+      <div class="presentation_d_tool" id="presentation_1_tool">
+        <img class="presentation_img_tool" src="/img/screen_multiple_screen.png"/>
+        <p class="presentation_p_tool">advanced system to display stock exchange data, possibility to view 4 instruments at the same time, possibility to add few indicators with this data</p>
+      </div>
+
+      <div class="presentation_d_tool" id="presentation_2_tool">
+        <img class="presentation_img_tool" src="/img/benefits_v1.png"/>
+        <p class="presentation_p_tool">Simplified interface to display your results in a few clicks</p>
+      </div>
+
+<!--      <div class="presentation_d_tool" id="presentation_3_tool">
+        <img class="presentation_img_tool" src="/img/strat_v2_crop.png"/>
+        <p class="presentation_p_tool">interactive interface to view your results in the form of larger or smaller squares, the color indicates the success or not of the trade, and the tick signifies if your strategy has automatically closed the trade or not</p>
+      </div>-->
+
+    </div>
+
+    <div id="operation">
+      <p id="operation_c_title">how it works ?</p>
+      <div id="operation_c">
+        <ol>
+          <li>Download list of largest companies from NASDAQ / NYSE / AMEX ([100;500] companies)</li>
+          </br>
+          <li>Download quotation from the opening of the stock exchange until the closing</li>
+          </br>
+          <li>update of stock market data every minute</li>
+          </br>
+          <li>calculation of the indicators in the stratégy <i>(example: RSI, SMA and stochastic in parameter 14)</i></li>
+          </br>
+          <li>Check the stragey for every last quotation</li>
+          </br>
+          <li>if a trend is detected </li>
+          <ol>
+            <li>save data at this time instrument (instru name, timestamp, prices)</li>
+            <li>change strategy of this instrument by the closing action strategy implemented</li>
+          </ol>
+          </br>
+          <li>saving all the data of the strategies, <i><u title="possible display of results on the pages: display_data / strategy / v1 / index.html or display_data / strategy / v2 / index.html">possible preview of the results in a CSV/html page</u></i></li>
+          </br>
+          <li>at the close of the stock exchanges:</li>
+          <ol>
+            <li> all data is saved on CSV files</li>
+            <li> analysis of results is now possible with CSV viewer or with the <u title="in display_data folders">html page</u></li>
+          </ol>
+        </ol>
+      </div>
+    </div>
+
+    <div id="strategy">
+
+      <img src="/img/TRC_operation.svg" id="strategy_operation_img"/>
+
+      <div id="strategy_txt">
+        <h2>STRATEGY EXAMPLE</h2>
+        <h3>TAKE PLACEMENT</h3>
+        <ul>
+          <li>
+            RSI <30 & STOCHASTIC <20  & SMA which goes above one of the last 3 prices
+            </br>
+            <span class="marge">
+              <img src="/img/arrow_top_to_right.svg" class="arrow_top_to_right"/> expected bullish reversal
+            </span>
+
+          </li>
+          <br/>
+          <li>
+            RSI> 70 & STOCHASTIC> 80 & SMA which goes below one of the last 3 prices
+          </br>
+            <span class="marge">
+              <img src="/img/arrow_top_to_right.svg" class="arrow_top_to_right"/> expected bearish reversal
+            </span>
+          </li>
+          <br/>
+          <li>
+            RSI / STOCHASTIC / SMA which does not take the desired values
+            </br>
+            <span class="marge">
+              <img src="/img/arrow_top_to_right.svg" class="arrow_top_to_right"/> no expected return
+            </span>
+
+          </li>
+        </ul>
+        <br/>
+        <h3>CLOSE PLACEMENT</h3>
+        <ul>
+          <li>
+            the long-term sma curve is reversed compared to the previous trend
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+
+    <div id="installation">
+      <h2>Installation</h2>
+      <pre><code>
+#Install nodejs and npm (developped in node : V14.15.0 | npm : 6.14.8)
+sudo apt-get install nodejs npm
+
+#After downloading app from github
+cd lib/global/require/
+
+#Install deppencies ()
+npm install fs https dns request
+npm install yahoo-finance-data
+npm install jsdom jquery figlet colors
+npm install technicalindicators
+
+#Test code (check that the American stock exchanges are open -> otherwise you will have an error)
+cd ../../../test/
+node export_quotation_at_time.js
+
+#You should have a directory created in data/multiple_file named with the current date
+      </code></pre>
+
+    </div>
+
+    <footer id="bottom_menu">
+      <p>Trading Robot Creator | copyright 2020</p>
+    </footer>
+
+  </body>
+</html>

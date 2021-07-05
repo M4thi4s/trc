@@ -1,0 +1,2 @@
+READ strat.js (check available indicators in lib/global/indicators/indicators_global_config.json, pattern in lib/global/pattern/pattern.json)
+test.js will test the strategy and return a csv in data/
