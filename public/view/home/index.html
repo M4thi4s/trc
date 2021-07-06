@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8"/>
     <title>TRC</title>
-<meta name="google-site-verification" content="TmwbGG4krlqH0RfuD5uPGI_sn18r9C0wFJJE9-W-ovU" />
+    <meta name="google-site-verification" content="TmwbGG4krlqH0RfuD5uPGI_sn18r9C0wFJJE9-W-ovU" />
 
     <link rel="stylesheet" href="/css/home/index.css"/>
     <link rel="stylesheet" href="/css/global/menu.css"/>
@@ -12,15 +12,15 @@
 
     <script src="/js/lib/jquery.min.js"></script>
 
-    <script src="/js/lib/highcharts/highstock.js"></script>
+    <!--<script src="/js/lib/highcharts/highstock.js"></script>
     <script src="/js/lib/highcharts/highcharts-more.js"></script>
-    <script src="/js/lib/highcharts/indicators/indicators-all.js"></script>
+    <script src="/js/lib/highcharts/indicators/indicators-all.js"></script>-->
 
     <script src="/js/global/serverInteraction.js"></script>
     <script src="/js/global/checkAuthentification.js"></script>
     <script src="/js/global/generate_menu.js"></script>
 
-    <script type="module" src="/js/home/index.js"></script>
+    <!--<script type="module" src="/js/home/index.js"></script>-->
   </head>
   <body>
 
@@ -36,7 +36,36 @@
     </ul>
 
     <div id="entry_display">
-      <div id="chart_div"></div>
+    <!--  <div id="chart_div"></div>-->
+
+      <!-- TradingView Widget BEGIN -->
+      <div class="tradingview-widget-container" >
+        <div id="tradingview_7b8c2"></div>
+        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NASDAQ-AAPL/" rel="noopener" target="_blank"><span class="blue-text">AAPL Chart</span></a> by TradingView</div>
+        <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+        <script type="text/javascript">
+        new TradingView.widget(
+        {
+        "autosize": true,
+        "symbol": "NASDAQ:AAPL",
+        "interval": "30",
+        "timezone": "Etc/UTC",
+        "theme": "dark",
+        "style": "9",
+        "locale": "en",
+        "toolbar_bg": "#f1f3f6",
+        "enable_publishing": false,
+        "hide_top_toolbar": true,
+        "studies": [
+          "MASimple@tv-basicstudies"
+        ],
+        "container_id": "tradingview_7b8c2"
+      }
+        );
+        </script>
+      </div>
+      <!-- TradingView Widget END -->
+
       <div class="text_div">
         <h1>TRADING ROBOT CREATOR</h1>
         <h2>powerful stock market robot creator</h2>

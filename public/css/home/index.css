@@ -12,6 +12,18 @@ h2{
 
 /* ENTRY DISPLAY */
 
+div#entry_display{
+  position:relative;
+  height:calc(100vh - 66px);
+  width:100%;
+}
+
+div#entry_display div.tradingview-widget-container div#tradingview_7b8c2{
+  height:calc(100vh - 66px);
+  opacity: 0.8;
+
+}
+
 div#entry_display div#chart_div{
   border-top:1px solid var(--main-txt-color);
   border-bottom:1px solid var(--main-txt-color);
@@ -21,12 +33,12 @@ div#entry_display div#chart_div{
 
 div#entry_display > div.text_div{
   position:absolute;
-  top: 50vh; left: 50%;
+  top: calc(50vh - 66px); left: 50vw;
   transform: translate(-50%, -50%);
   border: 2px solid var(--title-txt-color);
   padding:10px;
   text-align: center;
-  background-color:var(--main-bg-rgba);
+  background-color:var(--main-bg-color);
 }
 
 div#entry_display > div.text_div > *{
