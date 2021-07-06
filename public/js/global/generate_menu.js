@@ -5,7 +5,7 @@ window.onload=function(){
       li.className="menu_item_img";
       li.id="menu-6-item";
       li.innerHTML=  "<a class='right_item_menu' href='/account/' title='personal page'>"
-                    +"<img src='/img/home.svg' height='24' width='24'/>"
+                    +"<img src='/img/home.svg' height='48' width='48'/>"
                     +"</a>"
 
       document.getElementById("top_menu").appendChild(li);
@@ -15,7 +15,7 @@ window.onload=function(){
       li.className="menu_item_img";
       li.id="menu-6-item";
       li.innerHTML=  "<a class='right_item_menu' href='/login/' title='personal page'>"
-                    +"<img src='/img/login.svg' height='24' width='24'/>"
+                    +"<img src='/img/login.svg' height='48' width='48'/>"
                     +"</a>"
 
       document.getElementById("top_menu").appendChild(li);
