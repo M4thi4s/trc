@@ -21,6 +21,8 @@ div#form{
 div#form input{
   border:1px solid var(--main-txt-color);
   padding:10px;
+  box-sizing: border-box;
+  width:100%;
   font-size:2vh;
 }
 
