@@ -14,11 +14,14 @@ div#form{
   padding:20px;
 
   border:1px solid var(--main-txt-color);
+  
+
 }
 
 div#form input{
   border:1px solid var(--main-txt-color);
   padding:10px;
+  font-size:2vh;
 }
 
 div#form input[type=text], div#form input[type=email], div#form input[type=password]{
