@@ -16,7 +16,7 @@
   margin:0;
   padding:0;
   color:var(--main-txt-color);
-  font-size: 20px;
+  font-size:2vh;
 }
 
 #top_menu li a{
