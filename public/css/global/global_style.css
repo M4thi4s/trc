@@ -89,6 +89,14 @@ body{
   filter: invert(100%) sepia(92%) saturate(0%) hue-rotate(226deg) brightness(106%) contrast(108%);
 }
 
+.left{
+  text-align:left;
+}
+
 .center{
-  text-align: center;
+  text-align:center;
+}
+
+.right{
+  text-align:right;
 }
