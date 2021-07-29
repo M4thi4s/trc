@@ -2,6 +2,8 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 
+const sitemap = require('express-sitemap')();
+
 const loginRoutes = require('./routes/get/login.js');
 const strategyCreatorRoutes = require('./routes/get/strategyCreator.js');
 const accountRoutes = require('./routes/get/account.js');
@@ -89,5 +91,7 @@ app.use('/css', stylesheetRoutes);
 app.use(favicon(__dirname+'/public/img/favicon.ico'));
 
 app.use(error_manager);
+
+sitemap.generate(app);
 
 module.exports = app;
