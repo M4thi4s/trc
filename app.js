@@ -1,8 +1,9 @@
+const url="http://.trc.ovh";
+
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
-
-const sitemap = require('express-sitemap')();
+const robots = require('express-robots-txt');
 
 const loginRoutes = require('./routes/get/login.js');
 const strategyCreatorRoutes = require('./routes/get/strategyCreator.js');
@@ -88,10 +89,16 @@ app.use('/json', jsonRoutes);
 app.use('/js', scriptRoutes);
 app.use('/css', stylesheetRoutes);
 
+//GLOBAL : SITEMAP.XML AND ROBOTS.TXT AND FAVICON
+app.get('/sitemap.xml', function(req, res){
+  res.sendFile(process.cwd()+'/public/view/sitemap/sitemap.xml');
+}); 
+
+app.use(robots({ UserAgent: '*', Allow: '/', CrawlDelay: '1', Sitemap: url+'/sitemap.xml' }))
+
 app.use(favicon(__dirname+'/public/img/favicon.ico'));
 
+//DEFAULt ERROR MANAGER
 app.use(error_manager);
-
-sitemap.generate(app);
 
 module.exports = app;

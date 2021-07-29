@@ -1,0 +1,25 @@
+<urlset xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!--
+ created with Free Online Sitemap Generator www.xml-sitemaps.com 
+-->
+<url>
+<loc>http://trc.ovh/</loc>
+<lastmod>2021-07-09T14:50:13+00:00</lastmod>
+<priority>1.00</priority>
+</url>
+<url>
+<loc>http://trc.ovh/login/</loc>
+<lastmod>2021-07-09T13:58:04+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>http://trc.ovh/account/</loc>
+<lastmod>2021-07-09T13:58:04+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>http://trc.ovh/account/create_strategy/</loc>
+<lastmod>2021-07-09T13:58:04+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+</urlset>
